@@ -29,9 +29,9 @@ def check_win(boardState):
             print(str(boardState[i]) + " wins!")
             return True
         
-        if (boardState[i] == boardState[i+1] and boardState[i] == boardState[i+2] and boardState[i] != ' '):
+        if (boardState[i*3] == boardState[i*3+1] and boardState[i*3] == boardState[i*3+2] and boardState[i*3] != ' '):
             print()
-            print(str(boardState[i]) + " wins!")
+            print(str(boardState[i*3]) + " wins!")
             return True
 
     return False
